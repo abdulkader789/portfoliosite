@@ -17,6 +17,24 @@
   height: 60px;
   width: 100%;
 }
+.fire-border {
+    
+    border: 4px solid transparent;
+    border-image: 
+        linear-gradient(to right, #FF0000, #FF4500, #FF8C00, #FFD700, #FFA500, #FF4500, #FF0000) 1;
+    border-image-slice: 1;
+    border-image-repeat: round;
+    background: transparent; /* Set background to transparent to see the fiery border */
+}
+.smoke-border {
+    
+    border: 10px solid transparent;
+    border-image: 
+        radial-gradient(circle, #F5F5F5 0%, transparent 80%, transparent 100%) 1;
+    border-image-slice: 1;
+    border-image-repeat: round;
+    background: transparent; /* Set background to transparent to see the smoky border */
+}
 
 li:hover{
     cursor: pointer;
@@ -43,9 +61,12 @@ li:hover{
 
 }
 .side-nav{
-    width:50px;
-
-    
+    width:50px;  
+}
+@media (max-width: 768px) {
+    .side-nav{
+        width:30px;  
+    }
 }
 .main{
 
